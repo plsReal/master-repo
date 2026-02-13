@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="contact_us.css">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png">
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container"></div>
+
+    <!-- Main content wrapper -->
+    <main>
+      <div class="left-section">
+        <h1>We'd love to hear from you!!</h1>
+        <p>
+          Whether you have a question about our product, pricing, features or
+          anything else, our team is more than happy to answer all of your
+          questions!!!
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <h2>Get in touch with us</h2>
+
+        <form id = 'contact-form'>
+          <div class="name-row">
+            <input name = "firstName" type="text" placeholder="First Name" required>
+            <input name = "lastName" type="text" placeholder="Last Name" required>
+          </div>
+
+          <input name = "email" type="email" placeholder="Email Address" required>
+          <input name = "questionType" type="text" placeholder="Type of Question" required>
+          <input name = "phone" type="text" placeholder="Phone Number">
+          <textarea id="submit-question" name  = "message" type="text" placeholder="Type in your Question" required></textarea>
+
+          <button type="submit">Submit</button>
+
+        </form>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <div id="footer-container"></div>
+
+    <script src="contact_us.js"></script>
+  </body>
+</html>

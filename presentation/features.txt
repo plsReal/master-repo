@@ -1,0 +1,50 @@
+1. Real-time Underwater Scan & Identification
+AquaLens uses integrated imaging sensors and onboard AI to scan surrounding marine life in real time. As you dive, the lens tracks creatures and plants, matches them to its database, then displays the name, species classification, habitat details, and interesting facts.
+
+2. Built-in “Encyclopedia Mode”
+Whenever AquaLens identifies an organism, you can access an encyclopedia entry that includes:
+- Common and scientific names
+- Typical behaviour, size, depth range
+- Whether it’s safe, potentially dangerous, or protected
+- Interaction guidelines (e.g., “keep 2 m away”, “do not touch”, “photograph only”)
+- Conservation status and interesting facts
+
+3. Danger & Safety Alerts
+For any identified organism flagged as hazardous (venomous, aggressive, endangered, etc), AquaLens gives immediate visual/audio alert:
+- “Caution: Lionfish detected – venomous spines”
+- “Endangered coral species – do not touch or anchor here”
+- “Large predator nearby – maintain safe distance”
+This ensures diving safety and awareness of underwater risks.
+
+4. Pressure-proof, Underwater-Optimised Hardware
+Designed to endure deep-sea pressures, low-light conditions, and rough underwater environments:
+- Waterproof sealed casing
+- High-sensitivity sensors for murky/low light
+- Display/interface readable under water or via dive-mask HUD
+- Rugged build for both recreational and technical dives
+
+5. Logged Dive Reports & Sharing
+After each dive, AquaLens logs identified species, timestamps, GPS/depth location, and user notes. You can review your dive in the companion app/web portal:
+- View all species seen, marked with icons (safe, caution, endangered)
+- Export reports or share with dive-buddies and marine-biology networks
+- Filter by species, depth, location, date
+
+6. Intuitive User Interface (UI) & Workflow
+- Simple “Scan” mode: point the device or wear it; it auto-recognises organisms
+- “Explore” mode: browse the database offline, learn ahead of your dive
+- “Safety” mode: receive alerts/notifications in real time
+
+7. Expandable Database & Offline Mode
+Because underwater internet may not be available, AquaLens comes with a large built-in species database and supports offline updates when connected. Over time you can download regional “packs” (e.g., Caribbean reef, Pacific kelp forest, deep-sea habitats) so the device stays relevant worldwide.
+
+8. Dive-Assisted Navigation & Discovery
+Apart from species recognition, AquaLens helps you explore underwater terrain:
+- Highlights interesting features: coral formations, shipwrecks, marine life hotspots
+- Suggests safe routes based on depth/conditions
+- Logs your path and shows your “marine life score” — how many unique species you’ve seen
+
+Why Do These Features Matter?:
+Safety + Awareness: Divers often encounter unfamiliar species; knowing what you’re looking at (and whether it’s dangerous) makes for a safer dive.
+Education & Conservation: The encyclopedia mode fosters curiosity and respect for marine ecosystems — seeing an endangered species becomes a teachable moment.
+Enhanced Diving Experience: Beyond simply swimming, you’re exploring with a smart guide that enriches the journey.
+Data-Driven Exploration: Logging dives and species turns each outing into a record of progress, discovery, and contribution (to your own logs or wider community).

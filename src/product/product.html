@@ -1,0 +1,89 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaLens Product</title>
+    <link rel="stylesheet" href="style_product.css">
+</head>
+<style>
+
+</style>
+<body>
+   <!-- Navigation Bar -->
+    <div id="navbar-container"></div>
+
+<h1>Our Product: THE AQUALENS</h1>
+<main>
+<div>
+    
+    <h2>What Is It?</h2>
+    <p>As you've seen in previous descriptions, 
+      the AquaLens is a vital tool for anyone interested in underwater life. 
+      Whether you're an amateur scuba diver or a professional marine biologist, the AquaLens can help with everything. 
+      Just in case you're new here and haven't seen the description on our main page: 
+      AquaLens is an underwater device that can scan lifeform in the ocean and give a brief description about it. It is an essential object for divers looking to explore or just to avoid the spooky mysteries that are hidden in the vast ocean. Capable to wisthand great pressure and bad underwater conditions, AquaLens may be able to save your life or to help you identify sunken riches.
+    </p>
+    <h2>How Much Does It cost?</h2>
+    <p>If you check our pricing page, you'll see we have a wide variety of pricing options;
+       from AquaLens Standard, to AquaLens Pro, to AquaLens Ultra, all coming with unique features!
+    </p>
+    <h2>Why Should I Purchase The AquaLens?</h2>
+    <p>You might be asking yourself: how is this any better than a phone with a waterproof screen?
+      Well first off, a phone with a waterproof screen wouldn't actually last that long underwater.
+      Secondly, this all-new invention will revalutionize the way we experience the underwater world. 
+      If you're not a fan of the water, then this isn't for you and that's fine!
+      But if you love exploring the water as much as we do, you definitely don't want to miss this.
+    </p>
+</div>
+</main>
+
+<!-- footer -->
+    <div id="footer-container"></div>
+    <script>
+    // Fetch Nav bar
+    fetch('../../nav_bar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+
+            // Fix image paths for subdirectory
+            const logoImg = document.getElementById('logo-img');
+            const hamburgerImg = document.getElementById('hamburger-img');
+            const logoLink = document.querySelector('.logo');
+
+            if (logoImg) logoImg.src = '/images/AquaLens-Logo.png';
+            if (hamburgerImg) hamburgerImg.src = '/images/Hamburger_Menu_Nav_bar.png';
+            if (logoLink) logoLink.href = '/index.html';
+
+            // -----------------------------
+            // Ajouter l'onglet actif après insertion
+            const links = document.querySelectorAll('.navbar a');
+            const currentFile = window.location.pathname.split('/').pop();
+
+            links.forEach(link => {
+                const linkFile = link.getAttribute('href').split('/').pop();
+                if (linkFile === currentFile) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Hamburger menu
+            const hamburger = document.getElementById('hamburger-img');
+            const dropdown = document.getElementById('mobileDropdown');
+            if (hamburger && dropdown) {
+                hamburger.addEventListener('click', () => {
+                    dropdown.classList.toggle('show');
+                });
+            }
+        });
+
+    // Fetch footer
+    fetch('../../footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+
+</script>
+
+</body>
+</html>

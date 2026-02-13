@@ -1,0 +1,52 @@
+Overall Look and Feel of Aqualens
+===============================
+The AquaLens website captures the calmness and vibrancy of safely exploring the ocean 
+through a blue-based colour palette with bright accents and a clean, simple design 
+featuring soft, rounded edges.
+
+Colours
+========
+Our colour palette will consist mostly of blue to mimic the ocean and convey a sense of 
+reliability and security according to colour theory. We’ll also use yellow accents, as 
+it’s blue’s complementary colour and mimics sunshine and happiness.
+- #004E7A
+- #B9D5E7
+- #FCC107
+- #87A0B2
+- #A4BEF3
+- #FFFFFF
+- #000000
+
+
+Iconography
+===========
+Our icons will be clean and simple to contrast with our fun and vibrant backgrounds, 
+ensuring clarity and balance throughout the site.
+
+Typography
+==========
+We will be using Arial and Sans Serif from Google Fonts for their clean, 
+legible appearance. Their simplicity reflects clarity and professionalism while 
+keeping our text easy to read across all devices.
+
+Links
+=====
+Links should clearly change colour when hovered over or clicked to show interaction. 
+This detail helps users understand what elements are clickable while keeping the design 
+clean and consistent.
+
+Buttons
+=======
+Buttons will have rounded edges and change shade when hovered over to signal interactivity. 
+Their smooth transitions and simple shape reflect the calm, approachable tone of the site.
+
+Layout and Spacing
+==================
+Our layout will have generous spacing to keep content clear and organized. Each page 
+will have a slightly different structure to keep users engaged, while remaining fully 
+responsive across all device sizes.
+
+Accesibility
+============
+Our website will use clear fonts and easy-to-read layouts to keep text legible 
+against our backgrounds. We’ll also include alt text for our images and keyboard navigation.

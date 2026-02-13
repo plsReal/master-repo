@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="team.css">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png">
+
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+    }
+</style>
+
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar-container"></div>
+
+    <h1>Our Team</h1>
+    <main>
+        <div class="team-list">
+
+            <div class="team-card team-member">
+                <div class="photo">
+                    <img src="/images/Team Photo/Zakaria.jpeg" alt="Zakaria Amara">
+                </div>
+                <div class="member-text">
+                    <div class="member-header">
+                        <strong>Zakaria Amara</strong>
+                        <button class="toggle" aria-expanded="false" aria-controls="info-zakaria">More info</button>
+                    </div>
+                    <div id="info-zakaria" class="member-info" hidden>
+                        <p>Software Developer & Engineer</p>
+                        <p>As a member of the software development team since its set up, I focus on creating
+                            innovative solutions that enhance user experience and upgrading our softwares to meet the
+                            evolving needs of our users. I always believed that our product will revolutionize
+                            underwater photography and be a game-changer in the industry. Aqualens plays a significant
+                            role in my life as an engineer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card team-member">
+                <div class="photo">
+                    <img src="/images/Team Photo/Myriam.JPG" alt="Myriam Gallant-Blais">
+                </div>
+                <div class="member-text">
+                    <div class="member-header">
+                        <strong>Myriam Gallant-Blais</strong>
+                        <button class="toggle" aria-expanded="false" aria-controls="info-myriam">More info</button>
+                    </div>
+                    <div id="info-myriam" class="member-info" hidden>
+                        <p>Front-End Developer & Ocean Enthusiast</p>
+                        <p>As a dive instructor and underwater photographer, I believe the AquaLens holds a unique
+                            potential to connect people with marine life in real time. Working on this project has
+                            allowed me to combine my love for the ocean with technology, helping create an intuitive and
+                            engaging experience that makes underwater exploration more accessible, educational, and fun.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card team-member">
+                <div class="photo">
+                    <img src="/images/Team Photo/Kathryn.jpeg" alt="Kathryn McSheffery">
+                </div>
+                <div class="member-text">
+                    <div class="member-header">
+                        <strong>Kathryn McSheffery</strong>
+                        <button class="toggle" aria-expanded="false" aria-controls="info-kathryn">More info</button>
+                    </div>
+                    <div id="info-kathryn" class="member-info" hidden>
+                        <p>UI & Web Developer</p>
+                        <p>As a member of the AquaLens web development team, I worked on building a clean and functional 
+                            website that clearly presents our product and its purpose, so users can quickly understand what 
+                            makes AquaLens unique. Contributing to this project has strengthened my skills in design and 
+                            development, and I am proud of the role I played in bringing our vision online.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card team-member">
+                <div class="photo">
+                    <img src="/images/Team Photo/Lucas.JPEG" alt="Lucas Rawle">
+                </div>
+                <div class="member-text">
+                    <div class="member-header">
+                        <strong>Lucas Rawle</strong>
+                        <button class="toggle" aria-expanded="false" aria-controls="info-lucas">More info</button>
+                    </div>
+                    <div id="info-lucas" class="member-info" hidden>
+                        <p>Software & UI Developer</p>
+                        <p>I enjoyed working on the development of AquaLens, as everyone worked well together and all of the work nit together nicely. I designed the product page, as well as work on the overall design for how the website would look.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card team-member">
+                <div class="photo">
+                    <img src="/images/Team Photo/Paco.jpg" alt="Paco Situ">
+                </div>
+                <div class="member-text">
+                    <div class="member-header">
+                        <strong>Paco Situ</strong>
+                        <button class="toggle" aria-expanded="false" aria-controls="info-paco">More info</button>
+                    </div>
+                    <div id="info-paco" class="member-info" hidden>
+                        <p>Front-End Engineer & UI Developer</p>
+                        <p>As a developer for AquaLens, I specialize developing intuitive user interfaces. I focus on 
+                            designing innovative solutions to meet the needs and requirements of users. Working on this 
+                            project has inspired me to develop an accessible and engaging product. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card team-member">
+                <div class="photo">
+                    <img src="/images/Team Photo/Aditi.JPG" alt="Aditi Valmiki">
+                </div>
+                <div class="member-text">
+                    <div class="member-header">
+                        <strong>Aditi Valmiki</strong>
+                        <button class="toggle" aria-expanded="false" aria-controls="info-aditi">More info</button>
+                    </div>
+                    <div id="info-aditi" class="member-info" hidden>
+                        <p>Software & UI Developer</p>
+                        <p>I handled both the websites programming and its UI design. I wanted the site to be simple, 
+                           smooth, and visually clear, so users can understand the product quickly and explore it without 
+                           confusion. Blending design and development is one of my favorite parts of creating digital projects 
+                           like this, and I hope that my contribution for AquaLens reflects that.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <div id="footer-container"></div>
+    <script>
+    // Fetch Nav bar
+    fetch('../../nav_bar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+
+            // Fix image paths for subdirectory
+            const logoImg = document.getElementById('logo-img');
+            const hamburgerImg = document.getElementById('hamburger-img');
+            const logoLink = document.querySelector('.logo');
+
+            if (logoImg) logoImg.src = '/images/AquaLens-Logo.png';
+            if (hamburgerImg) hamburgerImg.src = '/images/Hamburger_Menu_Nav_bar.png';
+            if (logoLink) logoLink.href = '/index.html';
+
+            // -----------------------------
+            // Ajouter l'onglet actif après insertion
+            const links = document.querySelectorAll('.navbar a');
+            const currentFile = window.location.pathname.split('/').pop();
+
+            links.forEach(link => {
+                const linkFile = link.getAttribute('href').split('/').pop();
+                if (linkFile === currentFile) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Hamburger menu
+            const hamburger = document.getElementById('hamburger-img');
+            const dropdown = document.getElementById('mobileDropdown');
+            if (hamburger && dropdown) {
+                hamburger.addEventListener('click', () => {
+                    dropdown.classList.toggle('show');
+                });
+            }
+        });
+
+    // Fetch footer
+    fetch('../../footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+
+</script>
+    <script src="team.js" defer></script>
+</body>
+
+</html>

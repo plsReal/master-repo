@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>AquaLens | Home</title>
+        <link rel="icon" type="image/png" href="/images/favicon-32x32.png">
+    </head>
+
+    <body id="home-page">
+
+        <!-- Navigation Bar -->
+        <div id="navbar-container"></div>
+
+        <!-- Main Hero Section -->
+        <main class="hero">
+            
+            <!-- Background layer for smooth transitions -->
+            <div class="hero-bg" aria-label="Underwater coral reef scene" role="img"></div> 
+
+            <div class="overlay">
+                <div class="content">
+                    <h1>
+                        Ever wondered what that cool fish you saw was? With AquaLens, you'll never have to ask yourself this question again. 
+                        Our camera will tell you everything you want to know on the spot. Whether you're a marine biologist, a diver or simply 
+                        an ocean lover, the AquaLens is made for you!
+                    </h1>
+                    <div class="button-container">
+                        <a href="src/product/product.html" class="button">Discover</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Background Cycling JavaScript -->
+        <script>
+            const heroImages = [
+                "images/Underwater.png",
+                "images/Underwater 2.webp",
+                "images/Underwater 3.webp",
+                "images/anemone.jpg"
+            ];
+
+            const descriptions = [ // Descriptions for accessibility
+                "Underwater scene using the AquaLens information feature",
+                "Underwater scene with sunlight",
+                "Underwater scene with rocks",
+                "Using the AquaLense to analyze anemones"
+            ];
+
+            let current = 0;
+            const heroBg = document.querySelector('.hero-bg');
+            const changeInterval = 5000; // 5 seconds
+
+            // Preload images
+            heroImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+
+            // Initialize first background
+            heroBg.style.backgroundImage = `url('${heroImages[current]}')`;
+            heroBg.setAttribute('aria-label', descriptions[current]);
+            
+
+            function changeHeroBackground() {
+                heroBg.classList.add('fade-out');
+
+                setTimeout(() => {
+                    current = (current + 1) % heroImages.length;
+                    heroBg.style.backgroundImage = `url('${heroImages[current]}')`;
+                    heroBg.setAttribute('aria-label', descriptions[current]);
+                    heroBg.classList.remove('fade-out');
+                }, 1500);
+            }
+
+            setInterval(changeHeroBackground, changeInterval);
+        </script>
+
+        <!-- footer -->
+        <div id="footer-container"></div>
+        
+        <!--Navagation Bar and Footer, JavaScript-->
+       <script>
+    // Fetch Nav bar
+    fetch('../../nav_bar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+
+            // Fix image paths for subdirectory
+            const logoImg = document.getElementById('logo-img');
+            const hamburgerImg = document.getElementById('hamburger-img');
+            const logoLink = document.querySelector('.logo');
+
+            if (logoImg) logoImg.src = '/images/AquaLens-Logo.png';
+            if (hamburgerImg) hamburgerImg.src = '/images/Hamburger_Menu_Nav_bar.png';
+            if (logoLink) logoLink.href = '/index.html';
+
+            // -----------------------------
+            // Ajouter l'onglet actif après insertion
+            const links = document.querySelectorAll('.navbar a');
+            const currentFile = window.location.pathname.split('/').pop();
+
+            links.forEach(link => {
+                const linkFile = link.getAttribute('href').split('/').pop();
+                if (linkFile === currentFile) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Hamburger menu
+            const hamburger = document.getElementById('hamburger-img');
+            const dropdown = document.getElementById('mobileDropdown');
+            if (hamburger && dropdown) {
+                hamburger.addEventListener('click', () => {
+                    dropdown.classList.toggle('show');
+                });
+            }
+        });
+
+    // Fetch footer
+    fetch('../../footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+
+        </script>
+    </body>
+</html>
